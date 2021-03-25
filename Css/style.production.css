@@ -112,10 +112,7 @@ button:hover,button:focus,.button:hover,.button:focus{
   max-width: 260px;
 
 }
-svg{
-margin: 0 auto;
-  padding-right: 70px;
-}
+
 .hello{
   margin:0 auto;
   /* max-width: 1000px; */
