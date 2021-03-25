@@ -1,0 +1,245 @@
+/*
+Colors used
+
+Text Color (Dark Gray): #2b2b2b;
+Primary Color (Purple): #357b70;
+Secondary Color (Orange): #e0b354;
+*/
+/*  define the variables in the :root pseudo-class */
+:root{
+  --primary-color:#357b70;
+  --secondary-color:#e0b354;
+  --dark-grey:#2b2b2b;
+  --visited-link:#05676e;
+  --active-link:#489c79;
+  --background-color:#357b70;
+  --font-color:white;
+  --hover-color:yellow;
+  --grid-bgcolor:lightgrey;
+  --transition-start:#edc655;
+  --transition-middle:#fcffad;
+  --transition-end:#f76414;
+  --line-hg:1.5;
+  --padding-px:20px;
+  --max-wd:400px;
+  --margin-auto:0 auto;
+}
+/* setting the default width of an element to include the padding and the border via the box-sizing property and border-box value.  */
+* {
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+header{
+  line-height: var(--line-hg);
+
+
+}
+a{
+  color:var(--primary-color);
+}
+footer{
+  line-height: var(--line-hg);
+}
+table{
+  line-height: var(--line-hg);
+  clear: both;
+  margin:--margin-auto;
+  padding-top: var(--padding-px);
+}
+
+
+a:visited{
+  color: var(--visited-link);
+}
+
+/* a :focus styling. This will be activated when an element is targeted by the keyboard.  */
+a:hover ,a:focus{
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+}
+a:active{
+  color:  var(--active-link);
+}
+/* To make your download cv link look like a button is add the class .button to the rule-set you already specified in Exercise 1.5 for the button. */
+button,.button{
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the button */
+  background-color: var(--background-color);
+  color: var(--font-color);
+  padding: 10px;
+  border-radius: 3px;
+ /* width of the border, type, color */
+ border-bottom: 2px solid rgba(0,0,0,0.3);
+ /* transition-duration: 0.2s;
+ transition-property: opacity; */
+ transition: 0.2s opacity;
+
+}
+button:hover,button:focus,.button:hover,.button:focus{
+  cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  text-decoration: none;
+
+}
+.button__secondary {
+  background-color: var(--secondary-color);
+  color: var(--dark-grey);
+}
+/* your profile “box” is now centered on the page. This was due to the margin: 0 auto; declaration.  */
+.profile{
+  margin: var(--margin-auto);
+  max-width: var(--max-wd);
+
+}
+.hello{
+  margin:var(--margin-auto);
+  max-width: var(--max-wd);
+  text-align: center;
+}
+.skills-list{
+  list-style-type: none;
+  line-height: var(--line-hg) ;
+}
+/* The clear CSS property sets whether an element must be moved below (cleared) floating elements that precede it */
+.profile__portrait{
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+    border-radius: 50%;
+}
+/*flexbox- all content elements are arranged in a single row or column */
+.page-footer{
+  /* clear:both;
+Is a keyword indicating that the element is moved down to clear past both left and right floats. */
+  clear:both;
+display: flex;
+/* flex-direction:column-reverse; */
+flex-direction:column;
+text-align: center;
+
+}
+.page-header{
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  border-bottom:0.05rem solid grey;
+}
+.page-header__item{
+  flex:0 1 200px;
+  padding: 10px;
+  float:left;
+
+}
+.page-header__item:last-child{
+  flex-grow: 1;
+  text-align: right;
+   transform: translate(10px,0);
+}
+.navigation-list{
+  list-style-type: none;
+}
+/* (inline-block)This will align them in a row   */
+.navigation-list li{
+  display: inline-block;
+  margin-left: 15px;
+}
+.navigation-list__item:hover{
+color: var(--hover-color);
+transition: 0.5s opacity;
+font-weight: bold;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:var(--padding-px);
+  margin:15px 15px;
+
+}
+.grid__item{
+  background-color:  var(--grid-bgcolor);
+  padding: var(--padding-px);
+}
+@media all and (max-width: 500px) {
+.grid {
+grid-template-columns: 1fr;
+grid-gap:10px;
+}
+.grid__item:last-child {
+  grid-column: auto / auto;
+  grid-row: auto / auto;
+}
+h1 {
+  font-size: 22px;
+}
+}
+@media all and (min-width: 500px) and  (max-width: 750px){
+  .grid{
+    grid-template-columns:1fr 1fr;
+    grid-gap:10px;
+  }
+  .grid__item:last-child{
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+/* fill is a specific CSS property that only applies to SVGs. */
+/* Instead of from, you could write 0%, and instead of to, you could write 100% */
+@keyframes color-change{
+  0%{
+    fill:var(--transition-start);
+  }
+  50%{
+    fill:  var(--transition-middle) ;
+  }
+  100%{
+    fill: var(--transition-end);
+  }
+}
+.sun{
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+/* .sun {
+  animation: 4s color-change infinite alternate linear;
+} */
+@keyframes cloud-move {
+from{
+  transform: translate(0,50px);
+}
+to{
+  transform: translate(200px,50px);
+}
+}
+.cloud-front{
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move-reverse {
+from{
+  transform: translate(446px,48px);
+}
+to{
+  transform: translate(100px,48px);
+}
+}
+.cloud-back{
+  animation: 35s cloud-move-reverse infinite alternate linear;
+}

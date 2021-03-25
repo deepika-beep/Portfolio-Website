@@ -4,14 +4,15 @@
   <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My New Portfolio-Website</title>
+
+  <title>My Portfolio</title>
   <link rel="shortcut icon" href="img\favicon.ico">
   <!-- Normalize CSS-which forces browsers  to render all elements more consistently and in-line with modern standards, precisely targeting only styles that need normalizing. -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
-  <!-- <link rel="stylesheet" type="text/css" href="Css/styles.css"> -->
-    <link rel="stylesheet" type="text/css" href="Css\style.production.css">
+  <link rel="stylesheet" type="text/css" href="Css/styles.css">
+      <link rel="stylesheet" type="text/css" href="styles.production.css">
 </head>
 <body>
   <header class="page-header">
@@ -31,8 +32,8 @@
           <li role="presentation">
             <a href="about.html" role="menuitem" class="navigation-list__item">About me</a></li>
             <li role="presentation">
-              <li role="presentation">
-                <a href="work.html" role="menuitem" class="navigation-list__item">My Projects</a></li>
+              <a href="work.html" role="menuitem" class="navigation-list__item">My Projects</a></li>
+            <li role="presentation">
               <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a></li>
             </ul>
             <a href="#">Default Link</a>
@@ -40,17 +41,41 @@
             <button class="button__secondary">Secondary Button</button>
           </nav>
         </header>
-        <br>
-        <div class="profile">
-          <!-- add a portfolio img  -->
-          <img src="img\profile-pic.jpg" class="profile__portrait" alt="portfolio-logo">
-        </div>
-        <div class="hello">
-          <h1>Hello World!</h1>
-          <p>My name is Deepika.I am a <span>web</span> developer from Germany.</p>
-          <a href="#">Check out some of my code.</a>
-        </div>
-
+        <!-- Main content -->
+        <section>
+          <div class="grid">
+            <div class="grid__item">
+              <h2>Mob web Application</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <a href="#">See project on GitHub</a>
+            </div>
+            <div class="grid__item">
+              <h2>Mob web Application</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <a href="#">See project on GitHub</a>
+            </div>
+            <div class="grid__item">
+              <h2>Mob web Application</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              <a href="#">See project on GitHub</a>
+            </div>
+            <div class="grid__item">
+              <h2>Mob web Application</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              <a href="#">See project on GitHub</a>
+            </div>
+            <div class="grid__item">
+              <h2>Mob web Application</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              <a href="#">See project on GitHub</a>
+            </div>
+            <div class="grid__item">
+              <h2>Mob web Application</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+              <a href="#">See project on GitHub</a>
+            </div>
+            </div>
+        </section>
         <footer class="page-footer">
           <p>Find me on</p>
           <!-- add social media img -->
