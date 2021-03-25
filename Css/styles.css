@@ -249,7 +249,3 @@ to{
 .cloud-back{
   animation: 35s cloud-move-reverse infinite alternate linear;
 }
-svg{
-
-  padding-right: 70px;
-}
