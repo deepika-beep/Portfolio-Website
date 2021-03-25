@@ -38,6 +38,12 @@ header{
 
 
 }
+.hello{
+  margin:var(--margin-auto);
+  /* max-width: 1000px; */
+  text-align: center;
+  padding-top: 20px;
+}
 a{
   color:var(--primary-color);
 }
@@ -47,7 +53,7 @@ footer{
 table{
   line-height: var(--line-hg);
   clear: both;
-  margin:--margin-auto;
+  margin:var(--margin-auto);
   padding-top: var(--padding-px);
 }
 
@@ -242,4 +248,8 @@ to{
 }
 .cloud-back{
   animation: 35s cloud-move-reverse infinite alternate linear;
+}
+svg{
+
+  padding-right: 70px;
 }
