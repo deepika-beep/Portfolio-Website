@@ -37,7 +37,7 @@ footer{
 table{
   line-height: 1.5;
   clear: both;
-  margin:--margin-auto;
+  margin:0 auto;
   padding-top: 20px;
 }
 
@@ -109,12 +109,16 @@ button:hover,button:focus,.button:hover,.button:focus{
 /* your profile “box” is now centered on the page. This was due to the margin: 0 auto; declaration.  */
 .profile{
   margin: 0 auto;
-  max-width: 400px;
+  max-width: 260px;
 
+}
+svg{
+margin: 0 auto;
+  padding-right: 70px;
 }
 .hello{
   margin:0 auto;
-  max-width: 1000px;
+  /* max-width: 1000px; */
   text-align: center;
   padding-top: 20px;
 }
@@ -126,7 +130,7 @@ button:hover,button:focus,.button:hover,.button:focus{
 .profile__portrait{
   float: left;
   width: 250px;
-  margin-right: 40px;
+  margin-right: 5px;
     border-radius: 60%;
 }
 /*flexbox- all content elements are arranged in a single row or column */
