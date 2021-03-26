@@ -106,14 +106,10 @@ button:hover,button:focus,.button:hover,.button:focus{
   max-width: var(--max-wd);
 
 }
-.hello{
-  margin:var(--margin-auto);
-  max-width: var(--max-wd);
-  text-align: center;
-}
+
 .skills-list{
   list-style-type: none;
-  line-height: var(--line-hg) ;
+  line-height: var(--line-hg);
 }
 /* The clear CSS property sets whether an element must be moved below (cleared) floating elements that precede it */
 .profile__portrait{
