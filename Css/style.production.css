@@ -180,7 +180,7 @@ text-align: center;
   margin-left: 15px;
 }
 .navigation-list__item:hover{
-color: yellow;
+color: #40a0e0;
 -webkit-transition: 0.5s opacity;
 -o-transition: 0.5s opacity;
 transition: 0.5s opacity;
