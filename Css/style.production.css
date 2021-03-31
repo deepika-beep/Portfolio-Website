@@ -93,6 +93,7 @@ button{
  -webkit-transition: 0.2s opacity;
  -o-transition: 0.2s opacity;
  transition: 0.2s opacity;
+ margin-left: 25px;
 
 }
 button:hover,button:focus,.button:hover,.button:focus{
