@@ -22,6 +22,7 @@ body{
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   font-size: 16px;
+  background-color: #bce6dd;
 }
 header{
   line-height: 1.5;
@@ -50,6 +51,8 @@ a:visited{
 a:hover ,a:focus{
   /* No underlining when hovering over a link */
   text-decoration: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 a:active{
   color:  #489c79;
@@ -131,6 +134,29 @@ button:hover,button:focus,.button:hover,.button:focus{
   margin-right: 5px;
     border-radius: 60%;
 }
+
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  padding: 0 10px;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: rgb(250, 245, 245);
+}
+.page-content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  position: relative;
+  overflow-y: auto;
+  -webkit-animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
+}
 /*flexbox- all content elements are arranged in a single row or column */
 .page-footer{
   /* clear:both;
@@ -154,6 +180,9 @@ text-align: center;
   width: 100%;
   padding: 20px;
   border-bottom:0.05rem solid grey;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 .page-header__item{
   -webkit-box-flex:0;
@@ -200,6 +229,7 @@ font-weight: bold;
   background-color:  lightgrey;
   padding: 20px;
 }
+
 @media all and (max-width: 500px) {
 .grid {
 -ms-grid-columns: 1fr;
@@ -322,4 +352,30 @@ to{
 .cloud-back{
   -webkit-animation: 35s cloud-move-reverse infinite alternate linear;
           animation: 35s cloud-move-reverse infinite alternate linear;
+}
+/* About me page */
+.aboutMe {
+  text-align: center;
+}
+/* Contact page */
+address {
+  /* float: left; */
+  padding: 10px;
+  text-align: center;
+  line-height: 1.5;
+
+}
+.Interested {
+  clear: both;
+  padding-top: 20px;
+}
+
+/* Work page */
+
+section #work {
+  text-align: center;
+}
+/* Contact page */
+main {
+  text-align: center;
 }
