@@ -431,6 +431,10 @@ margin-bottom: 1.5em;
 .credits {
   margin-top: 1.5em;
   line-height: 1.5;
+   margin-right: 5em;
+    padding-top: 1em;
+   margin-left: 10em;
+  
 }
 .intro {
     display: -webkit-box;
@@ -458,10 +462,52 @@ margin-bottom: 1.5em;
     margin: 0 10em;
   }
   .content{
-    margin-left: 2em;
+    margin-left: 1em;
     line-height: 1.5;
   }
   .meet-img{
-    margin-right: 2em;
+        display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     
   }
+.meet-img img{
+  width:30%;
+}
+.credits li{
+  list-style-type: none;
+ margin-left: -2em;
+}
+.project-links{
+   display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+   -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+    -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+.project-links a {
+  margin: 0 0.2em;
+  padding: 0.5em;
+  background: #afa6a7;
+  color: rgb(27, 25, 25);
+
+  text-transform: uppercase;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.project-links a:hover {
+  background: none;
+  color: #24282c;
+}
