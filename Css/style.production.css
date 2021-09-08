@@ -34,6 +34,8 @@ a{
 }
 footer{
   line-height: 1.5;
+   background: #fceff0;
+    border-top: 8px solid #ddd3d4 ;
 }
 table{
   line-height: 1.5;
@@ -378,4 +380,134 @@ section #work {
 /* Contact page */
 main {
   text-align: center;
+}
+/* case study */
+.case-body{
+   background: #bce6dd;
+  color: #343a40;
+}
+.meet-style{
+   background: #fceff0;
+}
+.case-header{
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+  padding: 1.5em;
+  background: #fceff0;
+  color:#fff;
+  border-bottom: 6px solid #ddd3d4 ;
+  text-align: left;
+  z-index: 1;
+
+}
+.back-link{
+  text-decoration: none;
+  font-size: 1.5em;
+  color:white;
+}
+.back-link:hover{
+  color:darkblue;
+}
+.case-study h1{
+  padding: 1.2em;
+  text-align: center;
+  line-height: 1.2em;
+}
+.intro img,.meet-img img{
+  -webkit-box-shadow:2px 2px 10px -3px rgba(95, 105, 116, 0.99) ;
+  box-shadow: 2px 2px 10px -3px rgba(95, 105, 116, 0.99) ;
+  margin-bottom: 1em;
+}
+.intro-img,.meet-img{
+margin-top: 1.5em;
+margin-bottom: 1.5em;
+}
+.content{
+  padding-top: 0;
+}
+.challenges,
+.duration,
+.credits {
+  margin-top: 1.5em;
+  line-height: 1.5;
+   margin-right: 5em;
+    padding-top: 1em;
+   margin-left: 10em;
+  
+}
+.intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .intro-content {
+    margin-right: 2em;
+    padding-top: 1em;
+    line-height: 1.5;
+  }
+
+  .intro img {
+    margin-left: 2em;
+  }
+
+  .approach-title {
+    margin-top: 1.5em;
+  }
+  .case-study {
+    margin: 0 10em;
+  }
+  .content{
+    margin-left: 1em;
+    line-height: 1.5;
+  }
+  .meet-img{
+        display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    
+  }
+.meet-img img{
+  width:30%;
+}
+.credits li{
+  list-style-type: none;
+ margin-left: -2em;
+}
+.project-links{
+   display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+   -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+    -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+.project-links a {
+  margin: 0 0.2em;
+  padding: 0.5em;
+  background: #afa6a7;
+  color: rgb(27, 25, 25);
+
+  text-transform: uppercase;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.project-links a:hover {
+  background: none;
+  color: #24282c;
 }
